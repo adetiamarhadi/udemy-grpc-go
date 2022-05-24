@@ -23,4 +23,5 @@ func main() {
 	c := pb.NewCalculatorServiceClient(conn)
 
 	callSum(c)
+	callPrimes(c)
 }

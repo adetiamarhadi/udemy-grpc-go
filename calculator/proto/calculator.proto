@@ -4,6 +4,8 @@ package calculator;
 
 option go_package = "github.com/adetiamarhadi/udemy-grpc-go/calculator/proto";
 
+import "primes.proto";
+
 message SumRequest {
     int32 number_1 = 1;
     int32 number_2 = 2;
@@ -15,4 +17,5 @@ message SumResponse {
 
 service CalculatorService {
     rpc Sum (SumRequest) returns (SumResponse);
+    rpc Primes (PrimeRequest) returns (stream PrimeResponse);
 }
