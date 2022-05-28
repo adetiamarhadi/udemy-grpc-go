@@ -26,4 +26,5 @@ func main() {
 	callPrimes(c)
 	callAvg(c)
 	callMax(c)
+	callSqrt(c, -2)
 }
