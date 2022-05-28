@@ -24,4 +24,5 @@ func main() {
 
 	callGreet(c)
 	callGreetManyTimes(c)
+	callLongGreet(c)
 }

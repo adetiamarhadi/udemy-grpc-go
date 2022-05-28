@@ -24,4 +24,5 @@ func main() {
 
 	callSum(c)
 	callPrimes(c)
+	callAvg(c)
 }
