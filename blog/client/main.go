@@ -25,4 +25,5 @@ func main() {
 	id := createBlog(c)
 	readBlog(c, id)
 	updateBlog(c, id)
+	listBlogs(c)
 }
