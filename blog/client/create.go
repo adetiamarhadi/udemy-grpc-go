@@ -7,7 +7,7 @@ import (
 	pb "github.com/adetiamarhadi/udemy-grpc-go/blog/proto"
 )
 
-func createBlog(c pb.BlogServiceClient) {
+func createBlog(c pb.BlogServiceClient) string {
 
 	log.Println("Call CreateBlog function")
 
@@ -23,4 +23,6 @@ func createBlog(c pb.BlogServiceClient) {
 	}
 
 	log.Printf("Blog has been created: %s\n", res.Id)
+
+	return res.Id
 }
